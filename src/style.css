@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(242, 247, 251);
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    width: 50%;
+    background-color: white;
+    margin: 20px auto;
+}
+
+.header {
+    background-color: #F55A5A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0px;
+}
+
+.header--icon {
+    width: 24px;
+    margin-right: 7px;
+}
+
+.header--title {
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.place--list {
+    padding: 25px 40px ;
+}
+
+.place {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.place--img {
+    width: 125px;
+    height: 168px;
+}
+
+.location--icon {
+    width: 9px;
+    margin-right: 4px;
+}
+
+.place--country {
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    color: #2B283A;
+    margin-right: 12px;
+}
+
+a {
+    font-size: 11px;
+    font-weight: 400;
+    text-decoration-line: underline;
+    color: #918E9B;
+}
+
+.place--title {
+    font-size: 25px;
+    font-weight: bolder;
+    color: #2B283A;
+    margin-top: 4px;
+}
+
+.travel--date {
+    font-size: 11px;
+    font-weight: 700;
+    color: #2B283A;
+    margin-bottom: 9px;
+}
+
+.place--description {
+    width: 326;
+    font-size: 11px;
+    font-weight: 400;
+    color: #2B283A;
+    line-height: 1.5;
+}
+
+hr {
+    border: 0.5px solid #f5f5f5;
+    margin-bottom: 30px;
+}
