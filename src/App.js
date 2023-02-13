@@ -1,8 +1,9 @@
 import React from "react";
-//import Joke from "./Components/Joke";
-//import jokesData from "./jokesData"
+import Joke from "./Components/Joke";
+import jokesData from "./jokesData"
 import Header from "./Components/Header";
 import Places from "./Components/Places";
+import Form from "./Components/Form";
 import data from "./data"
 
 function App() {
@@ -11,23 +12,34 @@ function App() {
       key={item.id}
       item={item} />
   })
+
+  const jokeElements = jokesData.map((joke) => {
+    return <Joke  setup={joke.setup} punchline={joke.punchline} key={joke.id}  />
+  })
+
+
   return (
-    <div className="container">
+    <div className="App">
+      <Form />
+       {/*<Joke />
+    {jokeElements}*/}
+
+
+      {/*<div className="container">
       <Header />
       <section className="place--list">
         {placesData}
-      </section>
+  </section>
       
+    </div>*/}
+
     </div>
+
+    
   );
 
-  /*const jokeElements = jokesData.map((joke) => {
-    return <Joke  setup={joke.setup} punchline={joke.punchline}  />
-  })*/
-
-  {/*<div className="App">
-      {jokeElements}
-  </div>*/}
+  
+  
 }
 
 export default App;
