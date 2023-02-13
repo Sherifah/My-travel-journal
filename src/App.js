@@ -4,6 +4,7 @@ import jokesData from "./jokesData"
 import Header from "./Components/Header";
 import Places from "./Components/Places";
 import Form from "./Components/Form";
+import SignUpForm from "./Components/SignUpForm";
 import data from "./data"
 
 function App() {
@@ -20,8 +21,9 @@ function App() {
 
   return (
     <div className="App">
-      <Form />
-       {/*<Joke />
+      <SignUpForm />
+      {/*<Form />
+       <Joke />
     {jokeElements}*/}
 
 
